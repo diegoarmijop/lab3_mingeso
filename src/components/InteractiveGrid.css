@@ -1,0 +1,68 @@
+.malla-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .malla-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .malla-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .malla-item {
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .malla-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  .malla-item span {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: #0056b3;
+  }
+  
+  .malla-item small {
+    display: block;
+    color: #666;
+  }
+  
+  /* Estilos adicionales para niveles */
+  .malla-item.nivel-1 {
+    border-left: 4px solid #007bff;
+  }
+  
+  .malla-item.nivel-2 {
+    border-left: 4px solid #28a745;
+  }
+  
+  .malla-item.nivel-3 {
+    border-left: 4px solid #ffc107;
+  }
+  
+  /* Media queries para responsividad */
+  @media (max-width: 768px) {
+    .malla-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
